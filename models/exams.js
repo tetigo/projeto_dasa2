@@ -7,7 +7,7 @@ const Exams = (exam) => {
 }
 
 Exams.create = (newExam, result) => {
-    sql.query("INSERT INTO exams SET ?", newExam, (err, res) => {
+    sql.query("INSERT INTO exams SET nome=?, tipo=?, ativo=?", [newExam.nome, newExam.tipo, newExam.ativo], (err, res) => {
         if (err) {
             console.log("error: ", err);
             result(err, null);

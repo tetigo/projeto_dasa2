@@ -1,0 +1,30 @@
+GET http://localhost:3000/labs
+
+###
+
+GET http://localhost:3000/labs/exam/ultrassom
+###
+
+GET http://localhost:3000/exams
+
+###
+
+PUT http://localhost:3000/exams/1
+Content-Type: application/json
+
+{
+    "nome": "ultrassom",
+    "tipo": "imagem",
+    "ativo": true
+}
+
+###
+
+POST http://localhost:3000/exams
+Content-Content-Type: application-json
+
+{
+    "nome": "exame lixo",
+    "tipo": "lixo",
+    "ativo": true
+}

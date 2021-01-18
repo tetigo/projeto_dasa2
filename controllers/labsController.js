@@ -78,7 +78,7 @@ exports.update = (req, res) => {
 
     Labs.updateById(
         req.params.lab_id,
-        new Labs(req.body),
+        { ...req.body },
         (err, data) => {
             if (err) {
                 if (err.kind === "not_found") {

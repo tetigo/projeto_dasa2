@@ -8,11 +8,11 @@ exports.create = (req, res) => {
         });
     }
 
-    const exam = new Exams({
+    const exam = {
         nome: req.body.nome,
         tipo: req.body.tipo,
         ativo: req.body.ativo,
-    });
+    };
 
     Exams.create(exam, (err, data) => {
         if (err)
@@ -77,7 +77,13 @@ exports.update = (req, res) => {
 
     Exams.updateById(
         req.params.exam_id,
-        new Exams(req.body),
+        // let exam1 = new Exams({
+        //     nome: req.body.nome,
+        //     tipo: req.body.tipo,
+        //     ativo: req.body.ativo,
+        // }),
+
+        { ...req.body },
         (err, data) => {
             if (err) {
                 if (err.kind === "not_found") {
