@@ -5,7 +5,11 @@ const init = () => {
     const router = require('express').Router()
 
     router.use('/', (req, res) => {
-        res.status(200).send({ msg: "OK! Agora para ver os exames e laboratorios digite: https://dasa-project.herokuapp.com/exams ou https://dasa-project.herokuapp.com/labs" })
+        res.status(200).send({
+            msg: "OK! Agora para ver os exames e laboratorios digite: https://dasa-project.herokuapp.com/exams ou https://dasa-project.herokuapp.com/labs",
+            email: "tetigo@gmail.com",
+            project: "DASA - Labs and Exams"
+        })
     })
 
     router.use('/exams', examsRouter())
