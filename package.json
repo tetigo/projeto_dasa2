@@ -1,5 +1,5 @@
 {
-  "name": "dasa project",
+  "name": "dasa_project",
   "version": "1.0.0",
   "description": "API para manutencao de laboratorios e exames",
   "main": "index.js",
