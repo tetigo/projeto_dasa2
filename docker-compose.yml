@@ -1,12 +1,26 @@
-version: '3.1'
+version: "3.1"
 services:
   api:
-    image: testimage
+    image: testimage5
     ports: 
-        - "3000:3000"
+      - "3000:3000"
+    expose:
+      - "3000"
+    networks:
+      - mysql-compose-network
     links: 
-        - link-db
+      - link-db
   link-db:
-    image: mysql
+    image: mysql:5.5
+    container_name: db
     ports:
       - "3306:3306"
+    expose:
+      - "3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: ""
+    networks:
+      - mysql-compose-network
+networks: 
+  mysql-compose-network:
+    driver: bridge

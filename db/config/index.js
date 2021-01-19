@@ -1,8 +1,10 @@
 module.exports = {
-    HOST: "localhost",
+    HOST: "0.0.0.0",
     USER: "root",
     PASSWORD: "",
-    DB: "db_exam_lab"
+    DB: "db_exam_lab",
+    PORT: 3306,
+
 
     // HOST: "sql10.freemysqlhosting.net",
     // USER: "sql10387865",

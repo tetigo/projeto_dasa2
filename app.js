@@ -1,8 +1,7 @@
-const { json, urlencoded } = require('body-parser')
+const { json, urlencoded } = require('express')
 
 const init = () => {
     const express = require('express')
-    const bodyParser = require('body-parser')
     const cors = require('cors')
     const app = express()
 
@@ -12,7 +11,7 @@ const init = () => {
     app.use(json())
 
     app.use(routes())
-    
+
     const options = {
         methods: 'GET, POST, PUT, DELETE, OPTIONS',
         origin: '*'

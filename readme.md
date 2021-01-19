@@ -1,20 +1,25 @@
-## [Link do Site](https://jobify.tetigo.now.sh "Link do Projeto")
-
-## [Jobify](https://jobify.tetigo.now.sh "Link da Aplicação")
-
-Instalar vscode
+## [Link do Projeto no Heroku](https://jobify.tetigo.now.sh "Link do Projeto")
 
 
-Instalar plugin rest client by Huachao Mao
+
+Instalar [VSCode](https://code.visualstudio.com/download)
+
+
+Instalar plugin rest client by Huachao Mao utilizado para testar aplicação
 
 
 Este plugin permite efetuarmos requisições de dentro do proprio vscode. (arquivo test.http)
 
 
-Instalar xampp para ter um servidor mysql rodando localmente
+
+Se estiver utilizando Windows, instalar [Git Bash](https://gitforwindows.org/)
 
 
-Inicializar os modulos apache e mysql
+
+Instalar [xampp](https://www.apachefriends.org/pt_br/index.html) para ter um servidor mysql rodando localmente
+
+
+Inicializar os modulos apache e mysql no Xampp
 
 
 Agora vc está com os servidores http e mysql rodando nas portas: 80 e 3306 respectivamente
@@ -37,10 +42,21 @@ Clicar no botão executar
 
 Agora vc tem o banco db_exam_lab criado com alguns registros ja inseridos
 
-Executar o comando: node index.js na linha de comando
+
+No vscode, abrir terminal de comando e digitar o comando para baixar o projeto localmente:
+```git clone https://github.com/tetigo/projeto_dasa2.git```
+
+
+Executar o comando: npm install express mysql cors
+
+Executar o comando: npm install @mysql/xdevapi --save --save-exact
+
+
+Executar o comando: node index.js
 
 
 O servidor vai estar rodando na porta 3000 e o servidor de banco foi levantado na porta 3306
+
 
 Agora executar os teste do arquivo "test.http"
 
@@ -48,12 +64,15 @@ Agora executar os teste do arquivo "test.http"
 Basta clicar no texto escrito "Send Request" para enviar a requisição
 
 
-#### Para criar Imagem Docker
+#### Para criar Imagem Docker Local
 
-executar o comando: docker build -t testimage --no-cache
+executar o comando no terminal do vscode: docker build -t testimage . --no-cache
 
 
 agora vc acabou de criar a imagem docker contendo a aplicação
+
+
+Para verificar a imagem criada, rode o comando: docker images
 
 
 executar o comando: docker run -d -p 3000:3000 testimage
