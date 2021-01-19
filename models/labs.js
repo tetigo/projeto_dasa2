@@ -40,7 +40,7 @@ Labs.findById = (lab_id, result) => {
 
 Labs.findByExamName = (exam_name, result) => {
     sql.query(`SELECT l.nome FROM labs l inner join exams e on l.exam_id = e.id 
-                WHERE e.nome = '${exam_name}' and l.ativo = true and e.ativo= true`, (err, res) => {
+                WHERE e.nome = '${exam_name}' and l.ativo = true and e.ativo = true`, (err, res) => {
         if (err) {
             console.log("error: ", err);
             result(err, null);
@@ -48,8 +48,8 @@ Labs.findByExamName = (exam_name, result) => {
         }
 
         if (res.length) {
-            console.log("found labs: ", res[0]);
-            result(null, res[0]);
+            console.log("found labs: ", res);
+            result(null, res);
             return;
         }
         result({ kind: "not_found" }, null);

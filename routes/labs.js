@@ -1,14 +1,14 @@
 const init = () => {
-    const labs = require('../controllers/labsController')
+    const labsController = require('../controllers/labsController')
     const router = require('express').Router()
 
-    router.post("/", labs.create);
-    router.get("/", labs.findAll);
-    router.get("/:lab_id", labs.findOne);
-    router.get("/exam/:exam_name", labs.findByExamName);
-    router.put("/:lab_id", labs.update);
-    router.delete("/:lab_id", labs.delete);
-    router.delete("/", labs.deleteAll);
+    router.post("/", labsController.create);
+    router.get("/", labsController.findAll);
+    router.get("/:lab_id", labsController.findOne);
+    router.get("/exam/:exam_name", labsController.findByExamName);
+    router.put("/:lab_id", labsController.update);
+    router.delete("/:lab_id", labsController.delete);
+    router.delete("/", labsController.deleteAll);
 
     return router
 }

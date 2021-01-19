@@ -55,7 +55,7 @@ Exams.getAll = result => {
 Exams.updateById = (id, exam, result) => {
     sql.query(
         "UPDATE exams SET nome = ?, tipo = ?, ativo = ? WHERE id = ?",
-        [exam.nome, exam.endereco, exam.ativo, id],
+        [exam.nome, exam.tipo, exam.ativo, id],
         (err, res) => {
             if (err) {
                 console.log("error: ", err);

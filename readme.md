@@ -1,33 +1,74 @@
-## [Jobify](https://jobify.tetigo.now.sh "Link do Site")
+## [Link do Site](https://jobify.tetigo.now.sh "Link do Projeto")
 
-#### Objetivo
+## [Jobify](https://jobify.tetigo.now.sh "Link da Aplicação")
 
-Incluir rapidamente vagas de trabalho disponíveis.
-
-Vagas e Categorias são adicionadas pelo área admin do site.
-
-Área de admin não é visível para usuários do site.
-Essa área é protegida pelo authentication e authorization do próprio GitHub.
-
-Como não fazia parte das especificações do projeto uma área de login para o cliente, usa-se esse meio também seguro e mais rápido de desenvolver.
-
-É feito CI/CD entre [GitHub](https://github.com/tetigo/jobify "GitHub") e [Zeit](https://zeit.co/tetigo/jobify "Zeit").
-
-Desenvolvido utilizando as seguintes tecnologias e ferramentas:
-- Javascript
-- NodeJS
-- Express
-- SQLite
-- NPM
-- Git
-- SourceTree
-- VSCode
-
-[Link do Site](https://jobify.tetigo.now.sh "Link do Projeto")
-
-------------
+Instalar vscode
 
 
-Curso: Fullstack Master [DevPleno](https://www.devpleno.com/ "DevPleno")
+Instalar plugin rest client by Huachao Mao
+
+
+Este plugin permite efetuarmos requisições de dentro do proprio vscode. (arquivo test.http)
+
+
+Instalar xampp para ter um servidor mysql rodando localmente
+
+
+Inicializar os modulos apache e mysql
+
+
+Agora vc está com os servidores http e mysql rodando nas portas: 80 e 3306 respectivamente
+
+
+Clicar no botao admin do mysql no xampp control panel
+
+
+Vai abrir phpMyAdmin no browser
+
+
+Clicar no botao sql
+
+
+Copiar e colar o conteudo do arquivo 'script.sql' na caixa de sql
+
+
+Clicar no botão executar
+
+
+Agora vc tem o banco db_exam_lab criado com alguns registros ja inseridos
+
+Executar o comando: node index.js na linha de comando
+
+
+O servidor vai estar rodando na porta 3000 e o servidor de banco foi levantado na porta 3306
+
+Agora executar os teste do arquivo "test.http"
+
+
+Basta clicar no texto escrito "Send Request" para enviar a requisição
+
+
+#### Para criar Imagem Docker
+
+executar o comando: docker build -t testimage --no-cache
+
+
+agora vc acabou de criar a imagem docker contendo a aplicação
+
+
+executar o comando: docker run -d -p 3000:3000 testimage
+
+
+Agora levantamos um container docker contendo a aplicação
+
+
+O servidor Node está ouvindo na porta 3000. Basta executar os comandos de teste novamente 
+
+
+executar o comando: docker ps para ver os processos do docker que estão rodando
+
+
+executar o comando: docker stop <<container id>> pra parar a execução do container
+
 
 Tiago Mendes tetigo@gmail.com

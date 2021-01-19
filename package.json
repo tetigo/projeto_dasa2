@@ -1,24 +1,22 @@
 {
   "name": "jobify",
   "version": "1.0.0",
-  "description": "Jobify is a simple job board for sites.",
+  "description": "API para manutencao de laboratorios e exames",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "keywords": [
-    "jobify",
-    "job"
+    "exams",
+    "labs",
+    "dasa"
   ],
   "author": "Tiago Mendes",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "ejs": "^2.6.2",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mysql": "^2.18.1",
-    "mysql2": "^2.2.5",
-    "sqlite": "^3.0.3"
+    "mysql": "^2.18.1"
   }
 }

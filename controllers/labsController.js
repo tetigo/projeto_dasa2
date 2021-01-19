@@ -107,7 +107,7 @@ exports.delete = (req, res) => {
                     message: "Could not delete Customer with id " + req.params.lab_id
                 });
             }
-        } else res.send({ message: `Customer was deleted successfully!` });
+        } else res.send({ message: `Lab was deleted successfully!` });
     });
 };
 

@@ -1,0 +1,12 @@
+version: '3.1'
+services:
+  api:
+    image: testimage
+    ports: 
+        - "3000:3000"
+    links: 
+        - link-db
+  link-db:
+    image: mysql
+    ports:
+      - "3306:3306"

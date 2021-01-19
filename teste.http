@@ -1,8 +1,10 @@
+###
+
 GET http://localhost:3000/labs
 
 ###
 
-GET http://localhost:3000/labs/exam/ultrassom
+GET http://localhost:3000/labs/exam/urina
 ###
 
 GET http://localhost:3000/exams
@@ -15,16 +17,36 @@ Content-Type: application/json
 {
     "nome": "ultrassom",
     "tipo": "imagem",
-    "ativo": true
+    "ativo": false
+}
+
+###
+
+PUT http://localhost:3000/labs/1
+Content-Type: application/json
+
+{
+    "nome": "lab 01",
+    "endereco": "rua dos jequitibas 01",
+    "ativo": false,
+    "exam_id": 1
 }
 
 ###
 
 POST http://localhost:3000/exams
-Content-Content-Type: application-json
+Content-Type: application/json
 
 {
-    "nome": "exame lixo",
-    "tipo": "lixo",
+    "nome": "exame",
+    "tipo": "analise clinica",
     "ativo": true
 }
+
+###
+
+DELETE http://localhost:3000/exams/4
+
+
+
+
