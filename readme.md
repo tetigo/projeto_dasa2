@@ -49,8 +49,6 @@ No vscode, abrir terminal de comando e digitar o comando para baixar o projeto l
 
 Executar o comando: npm install express mysql cors
 
-Executar o comando: npm install @mysql/xdevapi --save --save-exact
-
 
 Executar o comando: node index.js
 
@@ -88,6 +86,17 @@ executar o comando: docker ps para ver os processos do docker que estão rodando
 
 
 executar o comando: docker stop <<container id>> pra parar a execução do container
+
+
+```
+OBS:- Devido a falta de tempo, ainda não criei testes, ainda faltam as funcionalidades
+      para inserção e deleção em lote. Esse projeto foi feito em Javascript com MySQL.
+      Tentei fazer o projeto inicialmente utilizando Typescript com MongoDB, mas fiquei com 
+      dúvida sobre o relacionamento um para muitos na hora de atualizar, criar e popular e cheguei a implementar parte da funcionalidade. Se quiserem ver o código original: [Projeto Dasa v1](https://github.com/tetigo/projeto_dasa)
+      Gostaria de um feedback sobre como proceder o relacionamento em questão, eu vou ficar
+      muito contente!
+      Valeu e muito obrigado pelo seu tempo.
+```
 
 
 Tiago Mendes tetigo@gmail.com

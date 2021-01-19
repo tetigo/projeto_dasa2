@@ -15,10 +15,8 @@
   "author": "Tiago Mendes",
   "license": "MIT",
   "dependencies": {
-    "@mysql/xdevapi": "8.0.23",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mysql": "github:felixge/node-mysql",
-    "mysql2": "^2.2.5"
+    "mysql": "^2.18.1"
   }
 }
