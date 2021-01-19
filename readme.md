@@ -93,12 +93,14 @@ OBS:- Devido a falta de tempo, ainda não criei testes, ainda faltam as funciona
       para inserção e deleção em lote. Esse projeto foi feito em Javascript com MySQL.
       Tentei fazer o projeto inicialmente utilizando Typescript com MongoDB, mas fiquei com 
       dúvida sobre o relacionamento um para muitos na hora de atualizar, criar e popular 
-      e cheguei a implementar parte da funcionalidade. Se quiserem ver o 
-      código original: [Projeto Dasa v1](https://github.com/tetigo/projeto_dasa)
+      e cheguei a implementar parte da funcionalidade.
       Gostaria de um feedback sobre como proceder o relacionamento em questão, eu vou ficar
       muito contente!
+      Se quiserem ver o codigo original, segue abaixo.
       Valeu e muito obrigado pelo seu tempo.
 ```
+[Projeto Dasa v1](https://github.com/tetigo/projeto_dasa)
+
 
 
 Tiago Mendes tetigo@gmail.com
