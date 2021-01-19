@@ -92,7 +92,9 @@ executar o comando: docker stop <<container id>> pra parar a execução do conta
 OBS:- Devido a falta de tempo, ainda não criei testes, ainda faltam as funcionalidades
       para inserção e deleção em lote. Esse projeto foi feito em Javascript com MySQL.
       Tentei fazer o projeto inicialmente utilizando Typescript com MongoDB, mas fiquei com 
-      dúvida sobre o relacionamento um para muitos na hora de atualizar, criar e popular e cheguei a implementar parte da funcionalidade. Se quiserem ver o código original: [Projeto Dasa v1](https://github.com/tetigo/projeto_dasa)
+      dúvida sobre o relacionamento um para muitos na hora de atualizar, criar e popular 
+      e cheguei a implementar parte da funcionalidade. Se quiserem ver o 
+      código original: [Projeto Dasa v1](https://github.com/tetigo/projeto_dasa)
       Gostaria de um feedback sobre como proceder o relacionamento em questão, eu vou ficar
       muito contente!
       Valeu e muito obrigado pelo seu tempo.
